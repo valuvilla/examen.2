@@ -11,10 +11,13 @@ def trabajo(cadena):
     elif cadena[0] == "#" and cadena[-1] == "#":
             return [] 
     else:
-         return [cadena]
+        if "#" in cadena:
+            return []
+        else:
+            return [cadena]
 
 #Probamos el codigo
-print(trabajo("##"))
+print(trabajo("####hola#ff"))
 
 if __name__ == '_main_':
     main()
