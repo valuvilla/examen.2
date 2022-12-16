@@ -31,7 +31,7 @@ def definir_sentido():
         matrix_nueva=sentido_antihorario(matrix)
     else:
         print("Opcion invalida")
-    return "la matriz rotada es: ",matrix_nueva
+    return matrix_nueva
 
 print(definir_sentido())
 
