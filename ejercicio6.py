@@ -1,17 +1,17 @@
 from ast import main
 import numpy as np
 
-def definir_matriz():
-    n=int(input("Ingrese la dimension de la matriz: "))
-    p=int(input("Generar matriz aleatoria (1) o ingresarla manualmente (2): "))
-    if p==1:
-        lim=int(input("Ingrese el limite superior de los numeros aleatorios: "))
-        matrix=np.random.randint(lim+1,size=(n,n))
-    elif p==2:
-        matrix=np.array([[int(input()) for i in range(n)] for j in range(n)])
-    else:
-        print("Opcion invalida")
-    return matrix
+# def definir_matriz():
+#     n=int(input("Ingrese la dimension de la matriz: "))
+#     p=int(input("Generar matriz aleatoria (1) o ingresarla manualmente (2): "))
+#     if p==1:
+#         lim=int(input("Ingrese el limite superior de los numeros aleatorios: "))
+#         matrix=np.random.randint(lim+1,size=(n,n))
+#     elif p==2:
+#         matrix=np.array([[int(input()) for i in range(n)] for j in range(n)])
+#     else:
+#         print("Opcion invalida")
+#     return matrix
 
 
 def sentido_horario(matrix):
