@@ -1,3 +1,7 @@
-import word2number as w2n
-
-print(w2n.word_to_num("one hundred and twenty three million four hundred and fifty six thousand seven hundred and eighty nine"))
+#from word2number import w2n
+def convertir(**kwargs):
+    cadena_1 = cadena.split(sep=",")
+    print(cadena_1)
+    # for i in cadena:
+    #     return w2n.word_to_num(cadena[i])
+print(convertir('two , four'))

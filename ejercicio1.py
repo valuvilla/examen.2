@@ -2,22 +2,23 @@ from ast import main
 from string import ascii_letters
 
 def trabajo(cadena):
-    if cadena[0] == "#" and cadena[1] != "#":
-            letra=cadena.split("#")[1:][-1]
-            if letra[0] in ascii_letters:
-                return [letra]
+    if len(cadena) > 1 and cadena[0] == '#':
+        letra=cadena.split("#")[1:]
+        palabra=letra[0]
+        if  len(letra) == 1:
+            if palabra[0] in ascii_letters:
+                    return [palabra]
             else:
-                return "Error"
-    elif cadena[0] == "#" and cadena[-1] == "#":
-            return [] 
-    else:
-        if "#" in cadena:
-            return []
+                    return "Error"
         else:
-            return [cadena]
+                return []
+    elif cadena[-1] == "#":
+             return [] 
+    else:
+        return [cadena]
 
 #Probamos el codigo
-print(trabajo("####hola#ff"))
+print(trabajo(input("Introduce una cadena: ")))
 
 if __name__ == '_main_':
     main()
