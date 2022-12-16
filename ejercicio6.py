@@ -27,12 +27,12 @@ def sentido_antihorario(matrix):
     return list(zip(*matrix))[::-1]
 
 #print(sentido_antihorario([[1,2,3],[4,5,6],[7,8,9]]))
-def definir_sentido():
+def definir_sentido(matrix):
     sentido=int(input("Ingrese el sentido de la rotacion: 1 para sentido horario, 2 para sentido antihorario: "))
     if sentido==1:
-        return sentido_horario
+        return sentido_horario(matrix)
     elif sentido==2:
-        return sentido_antihorario
+        return sentido_antihorario(matrix)
     else:
         print("Opcion invalida")
         return None
