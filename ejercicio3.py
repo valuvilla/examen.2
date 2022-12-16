@@ -12,7 +12,7 @@ def Fibonnacci(n):
             a,b=b,a+b
     return "Número de Fibonacci de {} es {}".format(n,a)
 
-print(Fibonnacci(10))
+print(Fibonnacci(int(input("Introduce un número: "))))
         
 if __name__ == '__main__':
     main()

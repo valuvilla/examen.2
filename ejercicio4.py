@@ -23,7 +23,7 @@ def luck_check(str):
 
             
 #Probamos el codigo
-print(luck_check("1233421"))
+print(luck_check(input("Introduce un número alto: ")))
 
 if __name__ == '__main__':
     main()
