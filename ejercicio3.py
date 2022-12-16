@@ -1,16 +1,18 @@
 
 from ast import main
+import sys
 
-
-def Fibonacci(n):
-    if n == 0 or n == 1:
-        return n
+def Fibonnacci(n):
+    sys.set_int_max_str_digits(2000000)
+    if n<0:
+        print("Error: El número debe ser positivo")
     else:
-        for i in range(2, n+1):
-            return Fibonacci(n-1) + Fibonacci(n-2)
-    
+        a,b=0,1
+        for i in range(n):
+            a,b=b,a+b
+    return "Número de Fibonacci de {} es {}".format(n,a)
 
-print(Fibonacci(10))
+print(Fibonnacci(10))
         
 if __name__ == '__main__':
     main()
