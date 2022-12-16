@@ -1,4 +1,6 @@
 from word2number import w2n
+from main import ast
+
 def convertir(*args):
     lista ="puedo escribir numeros como "
     for i in args:
@@ -7,4 +9,8 @@ def convertir(*args):
         else:
             lista+=str(w2n.word_to_num(i))+"."
     return lista
+
 print(convertir('two', 'four', 'one hundred'))
+
+if __name__ == '__main__':
+    main()
