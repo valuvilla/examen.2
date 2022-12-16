@@ -15,16 +15,17 @@ import numpy as np
 
 
 def sentido_horario(matrix):
+    
     if not matrix:
         return []
-    return list(zip(*matrix[::-1]))
+    return np.rot90(matrix)
 
 print(sentido_horario([[1,2,3],[4,5,6],[7,8,9]]))
 
 def sentido_antihorario(matrix):
-    return list(zip(*matrix))[::-1]
+    return np.rot270(matrix)
 
-#print(sentido_antihorario([[1,2,3],[4,5,6],[7,8,9]]))
+print(sentido_antihorario([[1,2,3],[4,5,6],[7,8,9]]))
 # def definir_sentido():
 #     sentido=int(input("Ingrese el sentido de la rotacion: 1 para sentido horario, 2 para sentido antihorario: "))
 #     if sentido==1:
