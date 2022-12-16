@@ -36,7 +36,7 @@ def definir_sentido():
          print("Opcion invalida")
          return None
 
-# print(definir_sentido())
+print(definir_sentido())
 
 
 if __name__=="__main__":
