@@ -1,5 +1,5 @@
+from ast import main
 from word2number import w2n
-from main import ast
 
 def convertir(*args):
     lista ="puedo escribir numeros como "
