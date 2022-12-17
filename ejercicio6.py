@@ -11,7 +11,6 @@ def definir_matriz():
          matrix=np.array([[int(input()) for i in range(n)] for j in range(n)])
     else:
         print("Opcion invalida")
-    print("La matriz original es: \n",matrix)
     return matrix
 
 def sentido_horario(matrix):
