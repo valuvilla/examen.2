@@ -11,8 +11,8 @@ def luck_check(str):
             ultimos=lista[len(lista)//2:]
         else:
             lista_1=lista.pop(len(lista)//2)
-            primeros=lista_1[:len(lista)//2]
-            ultimos=lista_1[len(lista)//2:]
+            primeros=lista_1[:len(lista_1)//2]
+            ultimos=lista_1[len(lista_1)//2:]
     for i in primeros:
             numeros1.append(int(i))
     for i in ultimos:

@@ -3,14 +3,16 @@ from ast import main
 import sys
 
 def Fibonnacci(n):
-    sys.set_int_max_str_digits(2000000)
-    if n<0:
-        print("Error: El número debe ser positivo")
+    private_cache={}
+    if n in private_cache:
+        return private_cache[n]
+    elif n<0:
+        raise ValueError("Error: El número debe ser positivo")
+    elif n==0 or n==1:
+        return "Número de Fibonacci de {} es {}".format(n,n)
     else:
-        a,b=0,1
-        for i in range(n):
-            a,b=b,a+b
-    return "Número de Fibonacci de {} es {}".format(n,a)
+        private_cache[n]=Fibonnacci(n-1)+Fibonnacci(n-2)
+        return private_cache[n]
 
 print(Fibonnacci(int(input("Introduce un número: "))))
         
